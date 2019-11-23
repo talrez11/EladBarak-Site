@@ -24,5 +24,11 @@
 </head>
 <body <?php body_class(); ?>>
 		<header>
-
+            <?php
+            wp_nav_menu( array(
+                    'theme_location' => 'Main Menu',
+                    'item_spacing' => 'discard'
+                )
+            );
+            ?>
         </header><!-- .site-header -->
