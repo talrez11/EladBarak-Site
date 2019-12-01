@@ -31,4 +31,20 @@ add_action( 'wp_enqueue_scripts', 'home_page_scripts' );
     <?php endif; ?>
 </section>
 
+<section id="logos">
+    <ul>
+        <?php if( have_rows('logos') ): ?>
+            <?php while( have_rows('logos') ): the_row(); // vars
+                $image = get_sub_field('image');
+                ?>
+                <li class="logo">
+                    <span>
+                        <img src="<?php echo $image; ?>" alt="">
+                    </span>
+                </li>
+            <?php endwhile; ?>
+        <?php endif; ?>
+    </ul>
+</section>
+
 <?php get_footer(); ?>

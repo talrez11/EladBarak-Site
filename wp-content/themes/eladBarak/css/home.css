@@ -79,3 +79,19 @@
     margin-bottom: 0px;
 }
 
+#logos {
+    background-color: #2e2e2e;
+    padding: 2em calc((100% - 1200px)/ 2);
+}
+
+#logos ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#logos ul li span {
+    display: block;
+}
+
