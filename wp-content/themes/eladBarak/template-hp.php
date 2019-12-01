@@ -23,8 +23,9 @@ add_action( 'wp_enqueue_scripts', 'home_page_scripts' );
             $description = get_sub_field('description');
             ?>
             <div class="slide">
+                <h1><?php echo $title; ?></h1>
                 <img src="<?php echo $image; ?>" alt="<?php echo $description; ?>">
-                <p><?php echo $description; ?></p>
+                <h2><?php echo $description; ?></h2>
             </div>
         <?php endwhile; ?>
     <?php endif; ?>

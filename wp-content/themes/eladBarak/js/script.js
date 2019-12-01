@@ -23,6 +23,7 @@ jQuery(window).ready(function() {
 
 	jQuery('.gallery').slick({
 		autoplay: true,
+		speed: 3000,
 		autoplaySpeed: 4000,
 		pauseOnFocus: false,
 		pauseOnHover: false,
