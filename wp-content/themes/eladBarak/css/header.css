@@ -4,7 +4,13 @@
 
 header {
     padding: 1.5em calc((100% - 1200px)/ 2);
-    background: black;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 100000;
 }
 
 #menu-main-menu {

@@ -1,0 +1,16 @@
+/*
+    HP STYLE
+*/
+
+#slider {
+    background-color: rgb(33, 33, 33);
+    width: 100%;
+    height: calc(100vw * (1080 / 1920));
+    position: relative;
+}
+
+#slider .slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+}

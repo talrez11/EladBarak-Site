@@ -20,4 +20,17 @@ jQuery(window).ready(function() {
 	        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
 	    }
 	};
+
+	jQuery('.gallery').slick({
+		autoplay: true,
+		autoplaySpeed: 4000,
+		pauseOnFocus: false,
+		pauseOnHover: false,
+		fade: true,
+		auto: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: true,
+		arrows: false
+	});
 });
