@@ -223,6 +223,7 @@ section#contact {
     padding: 0.7em 0.5em;
     border: none;
     font-size: 20px;
+    resize: none;
 }
 
 #sign label input[type="submit"] {
