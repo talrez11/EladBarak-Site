@@ -47,4 +47,49 @@ add_action( 'wp_enqueue_scripts', 'home_page_scripts' );
     </ul>
 </section>
 
+<section class="about">
+    <?php
+        echo get_field('about', $post->ID, true);
+    ?>
+</section>
+
+<section class="features">
+    <?php
+        echo get_field('features_heading', $post->ID, true);
+    ?>
+    <div class="wrap">
+        <?php if( have_rows('features') ): ?>
+            <?php while( have_rows('features') ): the_row(); // vars
+                $title = get_sub_field('title');
+                $description = get_sub_field('description');
+                ?>
+                <div class="feature">
+                    <h3><?php echo $title; ?></h3>
+                    <?php echo $description; ?>
+                </div>
+            <?php endwhile; ?>
+        <?php endif; ?>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>GET TO KNOW US</h2>
+    <p>JUST SEND US A MESSAGE AND WE'LL GET BACK TO YOU IN NO TIME</p>
+    <form id="sign">
+        <label for="first-name">
+            <input type="text" id="first-name" name="fname" placeholder="FIRST NAME">
+        </label>
+        <label for="last-name">
+            <input type="text" id="last-name" name="lname" placeholder="LAST NAME">
+        </label>
+        <label for="email">
+            <input type="email" id="email" name="email" placeholder="EMAIL ADDRESS">
+        </label>
+        <label for="message">
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="WHAT'S ON YOUR MIND?"></textarea>
+        </label>
+        <input type="submit" value="SEND">
+    </form>
+</section>
+
 <?php get_footer(); ?>
