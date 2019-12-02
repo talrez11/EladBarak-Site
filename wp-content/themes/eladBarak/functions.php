@@ -23,14 +23,14 @@
 	function send_to_mailchimp() {
 		// Put your MailChimp API and List ID hehe
 		$api_key = MAILCHIMP_API;
-		$list_id = '5af679a8d7';
-		$to = 'studiosuoton@gmail.com';
+		$list_id = 'e26a1eb9fa';
+		$to = 'studio@eladbarak.com';
         $cc = 'talreznic11@gmail.com';
 		$from = $_POST['email'];
-		$subject = 'פנייה מאתר דואטון';
+		$subject = 'Elad Barak Web Site';
 		$email_content = $_POST['message'];
-		$phone = $_POST['phone'];
-		$name = $_POST['fname'];
+		$fname = $_POST['fname'];
+		$lastname = $_POST['lname'];
 		$email = $_POST['email'];
 		$content_type = 'Content-Type: text/html; charset=UTF-8';
 		$headers = array();
@@ -38,13 +38,11 @@
 		$headers[] = "CC: $cc";
 		$headers[] = $content_type;
         $email_message = "<br />
-        Name: $name<br />
+        Name: $fname.' '.$lastname<br />
         Email: $email<br />
-        Phone: $phone<br />
         Message : $email_content<br />
         <br />
         Thank You.";
-
 		wp_mail($to, $subject, $email_message, $headers);
 
 		// Let's start by including the MailChimp API wrapper
@@ -58,7 +56,7 @@
 		// For wrapper's doc, visit: https://github.com/drewm/mailchimp-api
 		$result = $MailChimp->put("lists/$list_id/members/".$memberId, [
 			'email_address' => $_POST["email"],
-			'merge_fields'  => ['FNAME'=>$_POST["fname"], 'PHONE'=>$_POST["phone"], 'COMPANY'=>$_POST["company"]],
+			'merge_fields'  => ['FNAME'=>$_POST["fname"], 'LNAME'=>$_POST["lname"]],
 			'status'        => 'subscribed'
 		]);
 
