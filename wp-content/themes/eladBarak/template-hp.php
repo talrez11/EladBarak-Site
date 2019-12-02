@@ -88,8 +88,16 @@ add_action( 'wp_enqueue_scripts', 'home_page_scripts' );
         <label for="message">
             <textarea name="message" id="message" cols="30" rows="10" placeholder="WHAT'S ON YOUR MIND?"></textarea>
         </label>
-        <input type="submit" value="SEND">
+        <label for="submit" class="submit">
+            <input type="submit" id="submit" value="SEND">
+        </label>
     </form>
+
+    <address>
+        <p><a href="mailto:STUDIO@ELADBARAK.COM">STUDIO@ELADBARAK.COM</a></p>
+        <p>HA'HARASH 8 RAMAT HA'SHARON</p>
+        <p><a href="tel:052-5014072">052-5014072</a></p>
+    </address>
 </section>
 
 <?php get_footer(); ?>

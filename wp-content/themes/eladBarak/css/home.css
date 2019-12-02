@@ -155,7 +155,7 @@ section.features div.wrap {
 }
 
 section.features div.wrap div.feature {
-    padding: 2em 0em;
+    padding: 3em 0em;
     width: 49%;
     background-color: #2e2e2e;
 }
@@ -195,6 +195,84 @@ section.features div.wrap div.feature ul li:last-of-type {
 section#contact {
     padding: 6em calc((100% - 536px)/ 2);
     background-color: #212121;
+}
+
+#sign {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+#sign label {
+    display: block;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+#sign label.submit {
+    margin-left: auto;
+    width: 50%;
+}
+
+#sign label textarea,
+#sign label input {
+    display: block;
+    width: 100%;
+    padding: 0.7em 0.5em;
+    border: none;
+    font-size: 20px;
+}
+
+#sign label input[type="submit"] {
+    background-color: #00a8ff;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+::placeholder {
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #b3b3b3;
+}
+
+section#contact address {
+    display: block;
+    margin-top: 4em;
+}
+
+section#contact address p a,
+section#contact address p {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.19;
+    letter-spacing: 1.6px;
+    text-align: center;
+    color: #999999;
+}
+
+section#contact address p {
+    margin-bottom: 1em;
+}
+
+section#contact address p a {
+    text-decoration: none;
 }
 
 
