@@ -34,4 +34,10 @@ jQuery(window).ready(function() {
 		dots: true,
 		arrows: false
 	});
+
+	// Scroll to position
+	jQuery('#menu-main-menu a').on('click', function() {
+		var id = jQuery(this).attr('href');
+		jQuery("html, body").animate({ scrollTop: jQuery(id).offset().top}, 1500);
+	});
 });
