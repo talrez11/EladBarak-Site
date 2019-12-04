@@ -42,6 +42,18 @@ jQuery(window).ready(function() {
 		jQuery("html, body").animate({ scrollTop: jQuery(id).offset().top}, 1500);
 	});
 
+	// Theme switcher
+	var switchNames = [];
+	jQuery.each(jQuery('input[type="radio"]'), function() {
+		switchNames.push(jQuery(this).val());
+	});
+	console.log(switchNames);
+
+	switchElements = jQuery('input[type="radio"]');
+	switchElements.on('click', function() {
+		document.querySelector('body').className = jQuery(this).val();
+	});
+
 	var loaderSign = jQuery('#loader');
 	var successResponseNewsletter = '<h4>Thank You!<br> We will contact you soon</h4>';
 	var errorMessageNewLetter = '<h4>Email not valid!';

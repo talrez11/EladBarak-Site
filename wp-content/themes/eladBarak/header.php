@@ -31,4 +31,13 @@
                 )
             );
             ?>
+            <div class="switcher">
+                <label for="sun" class="switch sun">
+                    <input type="radio" name="switch" id="sun" value="bright">
+                </label>
+
+                <label for="moon" class="switch moon">
+                    <input type="radio" name="switch" id="moon" value="dark">
+                </label>
+            </div>
         </header><!-- .site-header -->

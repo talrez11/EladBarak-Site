@@ -10,6 +10,10 @@
     position: relative;
 }
 
+body.bright #slider {
+    background-color: transparent;
+}
+
 #slider .slide img {
     display: block;
     width: 100%;
@@ -34,6 +38,11 @@
     color: #f5f5f5;
 }
 
+body.bright #slider .slide h1 {
+    color: #383838;
+    font-weight: 300;
+}
+
 #slider .slide h2 {
     position: absolute;
     bottom: 20%;
@@ -49,6 +58,10 @@
     line-height: 1.2;
     letter-spacing: 2px;
     color: #cccccc;
+}
+
+body.bright #slider .slide h2 {
+    color: #383838;
 }
 
 #slider .slide h2 strong {
@@ -73,6 +86,11 @@
     z-index: 10;
 }
 
+body.bright .slick-dots li button {
+    background-color: #e6e6e6;
+ }
+
+body.bright .slick-dots li.slick-active button,
 .slick-dots li.slick-active button{
     background-color: #00a8ff;
 }
@@ -84,6 +102,10 @@
 #logos {
     background-color: #2e2e2e;
     padding: 2em calc((100% - 1200px)/ 2);
+}
+
+body.bright #logos {
+    background-color: #e6e6e6;
 }
 
 #logos ul {
@@ -122,6 +144,12 @@ section.about h2 {
     letter-spacing: 4.8px;
     text-align: center;
     color: #f5f5f5;
+}
+
+body.bright section#contact h2,
+body.bright section.features h2,
+body.bright section.about h2 {
+    color: #707070;
 }
 
 section.about p {
