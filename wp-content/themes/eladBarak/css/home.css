@@ -3,7 +3,7 @@
 */
 
 #slider {
-    margin-top: -101px;
+    margin-top: -170px;
     background-color: rgb(33, 33, 33);
     width: 100%;
     height: calc(100vw * (1080 / 1920));
@@ -53,6 +53,7 @@
 
 #slider .slide h2 strong {
     font-weight: 700;
+    color: #00a8ff;
 }
 
 .slick-dots {
@@ -60,8 +61,8 @@
 }
 
 .slick-dots li button {
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     position: absolute;
@@ -99,7 +100,7 @@
 section#contact,
 section.features,
 section.about {
-    padding: 3em calc((100% - 1100px)/ 2);
+    padding: 3.65em calc((100% - 1065px)/ 2);
     background-color: #333333;
     color: #ebebeb;
     text-align: center;
@@ -124,26 +125,31 @@ section.about h2 {
 }
 
 section.about p {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.19;
-    letter-spacing: 3.2px;
+    line-height: 1.21;
+    letter-spacing: 2.4px;
     text-align: center;
-    color: #ebebeb;
+    color: #ffffff;
+    margin: 0.8em 0em;
 }
 
 section#contact > p,
 section.features > p {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.2;
-    letter-spacing: 2px;
+    line-height: 1.21;
+    letter-spacing: 2.4px;
     text-align: center;
-    color: #ebebeb;
+    color: #ffffff;
+}
+
+section.features > p br {
+    display: none;
 }
 
 section.features div.wrap {
@@ -151,30 +157,30 @@ section.features div.wrap {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    margin-top: 2em;
+    margin-top: 3em;
 }
 
 section.features div.wrap div.feature {
     padding: 3em 0em;
-    width: 49%;
-    background-color: #2e2e2e;
+    width: 48.5%;
+    background-color: #383838;
 }
 
 section.features div.wrap div.feature h3 {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.2;
     letter-spacing: 2px;
     text-align: center;
-    color: #ebebeb;
+    color: #00a8ff;
 }
 
 section.features div.wrap div.feature ul li {
     display: block;
-    margin: 1em 0em;
-    font-size: 20px;
+    margin: 0.5em 0em;
+    font-size: 24px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -185,7 +191,7 @@ section.features div.wrap div.feature ul li {
 }
 
 section.features div.wrap div.feature ul li:first-of-type {
-    margin-top: 1.5em;
+    margin-top: 0.8em;
 }
 
 section.features div.wrap div.feature ul li:last-of-type {
@@ -203,6 +209,55 @@ section#contact {
     flex-wrap: nowrap;
     justify-content: center;
     margin-top: 2em;
+    position: relative;
+}
+
+#response,
+#loader {
+    position: absolute;
+    top: 49.5%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 101%;
+    background-color: #00000063;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+
+#response {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#response.show,
+#loader.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#response h4,
+#loader img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#response h4 {
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #ebebeb;
+    text-transform: uppercase;
+    width: 100%;
 }
 
 #sign label {
@@ -214,6 +269,8 @@ section#contact {
 #sign label.submit {
     margin-left: auto;
     width: 50%;
+    margin-bottom: 0;
+    position: relative;
 }
 
 #sign label textarea,
@@ -275,5 +332,3 @@ section#contact address p {
 section#contact address p a {
     text-decoration: none;
 }
-
-

@@ -76,6 +76,11 @@ add_action( 'wp_enqueue_scripts', 'home_page_scripts' );
     <h2>GET TO KNOW US</h2>
     <p>JUST SEND US A MESSAGE AND WE'LL GET BACK TO YOU IN NO TIME</p>
     <form id="sign">
+        <div id="loader">
+            <img src="<?php echo get_stylesheet_directory_uri().'/images/loader.gif'?>" alt="">
+        </div>
+        <div id="response"></div>
+        <input type="hidden" name="action" value="send_to_mailchimp">
         <label for="first-name">
             <input type="text" id="first-name" name="fname" placeholder="FIRST NAME">
         </label>

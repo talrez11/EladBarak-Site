@@ -43,7 +43,7 @@
         Message : $email_content<br />
         <br />
         Thank You.";
-		wp_mail($to, $subject, $email_message, $headers);
+		//wp_mail($to, $subject, $email_message, $headers);
 
 		// Let's start by including the MailChimp API wrapper
 		include('includes/MailChimp.php');
