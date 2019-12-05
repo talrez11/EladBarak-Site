@@ -48,7 +48,7 @@ jQuery(window).ready(function() {
 		switchNames.push(jQuery(this).val());
 	});
 
-	jQuery('body').addClass('bright');
+	jQuery('body').addClass('dark');
 
 	switchElements = jQuery('input[type="radio"]');
 	switchElements.on('click', function() {

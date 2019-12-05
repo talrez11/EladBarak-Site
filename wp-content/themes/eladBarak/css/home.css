@@ -133,6 +133,11 @@ body.bright #logos {
     display: block;
 }
 
+#logos ul li span svg {
+    display: block;
+    width: 100%;
+}
+
 body.bright #logos ul li span svg path {
     fill: #383838;
 }
@@ -432,4 +437,97 @@ section#contact address p {
 
 section#contact address p a {
     text-decoration: none;
+}
+
+@media only screen and (max-width: 767px) {
+    #slider {
+        margin-top: -85px;
+        height: calc(125vw * (586 / 375));
+    }
+
+    #slider .slide h1 {
+        font-size: 24px;
+    }
+
+    .slick-dots {
+        bottom: 10%;
+    }
+
+    #slider .slide h2 {
+        bottom: 15%;
+    }
+
+    #slider .slide h2 strong {
+        display: block;
+        font-size: 16px;
+    }
+
+    #slider .slide p {
+        font-size: 15px;
+    }
+
+    #slider .slide img {
+        display: block;
+        width: 330%;
+        height: auto;
+        position: relative;
+        right: calc(230% / 2);
+    }
+
+    section.features div.wrap {
+        flex-direction: column;
+    }
+
+    section.features div.wrap div.feature {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    section.features div.wrap div.feature:last-of-type {
+        margin-bottom: 0;
+    }
+
+    #logos {
+        padding: 2em 1em;
+    }
+
+    #logos ul {
+        flex-wrap: wrap;
+    }
+
+    #logos ul li {
+        width: 50%;
+        padding: 1.5em 0em;
+    }
+
+    section#contact,
+    section.features,
+    section.about {
+        padding: 2em 1em;
+    }
+
+    section#contact h2,
+    section.features h2,
+    section.about h2 {
+        font-size: 24px;
+    }
+
+    section#contact > p,
+    section.features > p,
+    section.about p {
+        font-size: 16px;
+    }
+
+    section.features div.wrap div.feature h3,
+    section.features div.wrap div.feature ul li {
+        font-size: 16px;
+    }
+
+    #sign label.submit {
+        width: 100%;
+    }
+
+    section#contact address {
+        margin-top: 3em;
+    }
 }
