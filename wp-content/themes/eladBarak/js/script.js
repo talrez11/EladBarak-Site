@@ -47,7 +47,8 @@ jQuery(window).ready(function() {
 	jQuery.each(jQuery('input[type="radio"]'), function() {
 		switchNames.push(jQuery(this).val());
 	});
-	console.log(switchNames);
+
+	jQuery('body').addClass('bright');
 
 	switchElements = jQuery('input[type="radio"]');
 	switchElements.on('click', function() {

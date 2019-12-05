@@ -39,7 +39,8 @@ add_action( 'wp_enqueue_scripts', 'home_page_scripts' );
                 ?>
                 <li class="logo">
                     <span>
-                        <img src="<?php echo $image; ?>" alt="">
+<!--                        <img src="--><?php //echo $image; ?><!--" alt="">-->
+                        <?php echo file_get_contents($image);?>
                     </span>
                 </li>
             <?php endwhile; ?>

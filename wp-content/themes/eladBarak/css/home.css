@@ -69,6 +69,10 @@ body.bright #slider .slide h2 {
     color: #00a8ff;
 }
 
+body.bright #slider .slide h2 strong {
+    color: #005dff;
+}
+
 .slick-dots {
     bottom: 10%;
 }
@@ -90,9 +94,13 @@ body.bright .slick-dots li button {
     background-color: #e6e6e6;
  }
 
-body.bright .slick-dots li.slick-active button,
+
 .slick-dots li.slick-active button{
     background-color: #00a8ff;
+}
+
+body.bright .slick-dots li.slick-active button {
+    background-color: #005dff;
 }
 
 .slick-dotted.slick-slider {
@@ -119,6 +127,10 @@ body.bright #logos {
     display: block;
 }
 
+body.bright #logos ul li span svg path {
+    fill: #383838;
+}
+
 section#contact,
 section.features,
 section.about {
@@ -126,6 +138,12 @@ section.about {
     background-color: #333333;
     color: #ebebeb;
     text-align: center;
+}
+
+body.bright section#contact,
+body.bright section.features,
+body.bright section.about {
+    background-color: #f4f4f4;
 }
 
 section.features {
@@ -146,10 +164,13 @@ section.about h2 {
     color: #f5f5f5;
 }
 
-body.bright section#contact h2,
 body.bright section.features h2,
 body.bright section.about h2 {
     color: #707070;
+}
+
+body.bright section#contact h2 {
+    color: #383838;
 }
 
 section.about p {
@@ -176,6 +197,15 @@ section.features > p {
     color: #ffffff;
 }
 
+body.bright section.about p,
+body.bright section.features > p {
+    color: #707070;
+}
+
+body.bright section#contact > p {
+    color: #383838;
+}
+
 section.features > p br {
     display: none;
 }
@@ -194,6 +224,10 @@ section.features div.wrap div.feature {
     background-color: #383838;
 }
 
+body.bright section.features div.wrap div.feature {
+    background-color: #e6e6e6;
+}
+
 section.features div.wrap div.feature h3 {
     font-size: 24px;
     font-weight: bold;
@@ -204,6 +238,11 @@ section.features div.wrap div.feature h3 {
     text-align: center;
     color: #00a8ff;
 }
+
+body.bright section.features div.wrap div.feature h3 {
+    color: #005dff;
+    font-weight: 400;
+ }
 
 section.features div.wrap div.feature ul li {
     display: block;
@@ -218,6 +257,10 @@ section.features div.wrap div.feature ul li {
     color: #cccccc;
 }
 
+body.bright section.features div.wrap div.feature ul li {
+    color: #707070;
+}
+
 section.features div.wrap div.feature ul li:first-of-type {
     margin-top: 0.8em;
 }
@@ -229,6 +272,10 @@ section.features div.wrap div.feature ul li:last-of-type {
 section#contact {
     padding: 6em calc((100% - 536px)/ 2);
     background-color: #212121;
+}
+
+body.bright section#contact {
+    background-color: white;
 }
 
 #sign {
@@ -311,6 +358,11 @@ section#contact {
     resize: none;
 }
 
+body.bright #sign label textarea,
+body.bright #sign label input {
+    background-color: #e8e8e8;
+}
+
 #sign label input[type="submit"] {
     background-color: #00a8ff;
     font-size: 20px;
@@ -324,6 +376,10 @@ section#contact {
     cursor: pointer;
 }
 
+body.bright #sign label input[type="submit"] {
+    background-color: #005dff;
+}
+
 ::placeholder {
     font-size: 20px;
     font-weight: normal;
@@ -333,6 +389,10 @@ section#contact {
     letter-spacing: normal;
     text-align: left;
     color: #b3b3b3;
+}
+
+body.bright ::placeholder {
+    color: #707070;
 }
 
 section#contact address {
