@@ -24,7 +24,7 @@ jQuery(window).ready(function() {
 
 	jQuery('.gallery').slick({
 		autoplay: true,
-		speed: 3000,
+		speed: 1500,
 		autoplaySpeed: 4000,
 		pauseOnFocus: false,
 		pauseOnHover: false,
@@ -37,7 +37,13 @@ jQuery(window).ready(function() {
 	});
 
 	// Scroll to position
-	jQuery('#menu-main-menu a').on('click', function() {
+	jQuery('#menu-main-menu li.contact a').on('click', function(event) {
+		event.preventDefault();
+		var id = jQuery(this).attr('href');
+		jQuery("html, body").animate({ scrollTop: jQuery(id).offset().top}, 1500);
+	});
+
+	jQuery('a#action').on('click', function() {
 		var id = jQuery(this).attr('href');
 		jQuery("html, body").animate({ scrollTop: jQuery(id).offset().top}, 1500);
 	});
@@ -78,7 +84,12 @@ jQuery(window).ready(function() {
 			} else {
 				jQuery('#response').html(errorMessageNewLetter);
 			}
+			setTimeout(removeMessage, 3000);
 			loaderSign.removeClass('show');
 		});
 	});
 });
+
+function removeMessage() {
+	jQuery('#response').removeClass('show');
+}

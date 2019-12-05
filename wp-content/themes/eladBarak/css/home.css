@@ -2,6 +2,10 @@
     HP STYLE
 */
 
+div.action {
+    display: none;
+}
+
 #slider {
     margin-top: -170px;
     background-color: rgb(33, 33, 33);
@@ -42,7 +46,7 @@ body.bright #slider {
 
 body.bright #slider .slide h1 {
     color: #383838;
-    font-weight: 300;
+    /*font-weight: 300;*/
 }
 
 #slider .slide h2 {
@@ -439,7 +443,106 @@ section#contact address p a {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1023px) {
+    header {
+        padding: 1em;
+    }
+
+    #slider {
+        margin-top: -80px;
+    }
+
+    #slider .slide h1 {
+        top: 25%;
+        font-size: 24px;
+    }
+
+    #slider .slide h2 {
+        font-size: 16px;
+    }
+
+    .slick-dots {
+        bottom: 7%;
+    }
+
+    #logos {
+        padding: 0em 1em;
+    }
+
+    #logos ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #logos ul li {
+        width: 25%;
+        margin: 2em 0em;
+    }
+
+    section#contact, section.features, section.about {
+        padding: 2em 1.5em;
+        background-color: #333;
+        color: #ebebeb;
+        text-align: center;
+        transition: all 0.3s;
+    }
+
+    section#contact h2,
+    section.features h2,
+    section.about h2 {
+        font-size: 24px;
+    }
+
+    section#contact > p,
+    section.features > p,
+    section.about p {
+        font-size: 16px;
+    }
+
+    section.features div.wrap div.feature h3,
+    section.features div.wrap div.feature ul li {
+        font-size: 16px;
+    }
+
+    section.features div.wrap div.feature ul li {
+        margin: 0.8em 0em;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    div.action {
+        text-align: center;
+        background-color: #212121;
+        margin-top: -60px;
+        position: relative;
+        padding-bottom: 2em;
+        display: block;
+    }
+
+    body.bright div.action {
+        background-color: white;
+    }
+
+    a#action {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 53px;
+        letter-spacing: 2px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 168, 255);
+        width: 220px;
+        height: 53px;
+    }
+
+    body.bright a#action {
+        background-color: #005dff;
+    }
+
     #slider {
         margin-top: -85px;
         height: calc(125vw * (586 / 375));
@@ -450,7 +553,7 @@ section#contact address p a {
     }
 
     .slick-dots {
-        bottom: 10%;
+        bottom: 13%;
     }
 
     #slider .slide h2 {
@@ -464,6 +567,7 @@ section#contact address p a {
 
     #slider .slide p {
         font-size: 15px;
+        padding: 0em 1.5em;
     }
 
     #slider .slide img {
@@ -476,6 +580,7 @@ section#contact address p a {
 
     section.features div.wrap {
         flex-direction: column;
+        margin-top: 2em;
     }
 
     section.features div.wrap div.feature {
@@ -493,11 +598,13 @@ section#contact address p a {
 
     #logos ul {
         flex-wrap: wrap;
+        justify-content: flex-start;
     }
 
     #logos ul li {
         width: 50%;
         padding: 1.5em 0em;
+        margin: 0;
     }
 
     section#contact,
@@ -523,11 +630,23 @@ section#contact address p a {
         font-size: 16px;
     }
 
+    section.features div.wrap div.feature ul li {
+        margin: 0.8em 0em;
+    }
+
     #sign label.submit {
         width: 100%;
     }
 
     section#contact address {
         margin-top: 3em;
+    }
+
+    #sign label textarea, #sign label input {
+        font-size: 16px;
+    }
+
+    ::placeholder {
+        font-size: 16px;
     }
 }
