@@ -49,6 +49,8 @@ body.bright #menu-main-menu li a {
     border: 1px solid white;
     background-color: transparent;
     font-size: 24px;
+    transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 body.bright #menu-main-menu li.logo a {

@@ -8,6 +8,7 @@
     width: 100%;
     height: calc(100vw * (1080 / 1920));
     position: relative;
+    transition: all 0.3s;
 }
 
 body.bright #slider {
@@ -36,6 +37,7 @@ body.bright #slider {
     letter-spacing: 4.8px;
     text-align: center;
     color: #f5f5f5;
+    transition: all 0.3s;
 }
 
 body.bright #slider .slide h1 {
@@ -58,6 +60,7 @@ body.bright #slider .slide h1 {
     line-height: 1.2;
     letter-spacing: 2px;
     color: #cccccc;
+    transition: all 0.3s;
 }
 
 body.bright #slider .slide h2 {
@@ -67,6 +70,7 @@ body.bright #slider .slide h2 {
 #slider .slide h2 strong {
     font-weight: 700;
     color: #00a8ff;
+    transition: all 0.3s;
 }
 
 body.bright #slider .slide h2 strong {
@@ -88,6 +92,7 @@ body.bright #slider .slide h2 strong {
     transform: translate(-50%, -50%);
     padding: 0.2em;
     z-index: 10;
+    transition: all 0.3s;
 }
 
 body.bright .slick-dots li button {
@@ -110,6 +115,7 @@ body.bright .slick-dots li.slick-active button {
 #logos {
     background-color: #2e2e2e;
     padding: 2em calc((100% - 1200px)/ 2);
+    transition: all 0.3s;
 }
 
 body.bright #logos {
@@ -138,6 +144,7 @@ section.about {
     background-color: #333333;
     color: #ebebeb;
     text-align: center;
+    transition: all 0.3s;
 }
 
 body.bright section#contact,
@@ -162,6 +169,7 @@ section.about h2 {
     letter-spacing: 4.8px;
     text-align: center;
     color: #f5f5f5;
+    transition: all 0.3s;
 }
 
 body.bright section.features h2,
@@ -183,6 +191,7 @@ section.about p {
     text-align: center;
     color: #ffffff;
     margin: 0.8em 0em;
+    transition: all 0.3s;
 }
 
 section#contact > p,
@@ -195,6 +204,7 @@ section.features > p {
     letter-spacing: 2.4px;
     text-align: center;
     color: #ffffff;
+    transition: all 0.3s;
 }
 
 body.bright section.about p,
@@ -222,6 +232,7 @@ section.features div.wrap div.feature {
     padding: 3em 0em;
     width: 48.5%;
     background-color: #383838;
+    transition: all 0.3s;
 }
 
 body.bright section.features div.wrap div.feature {
@@ -237,6 +248,7 @@ section.features div.wrap div.feature h3 {
     letter-spacing: 2px;
     text-align: center;
     color: #00a8ff;
+    transition: all 0.3s;
 }
 
 body.bright section.features div.wrap div.feature h3 {
@@ -255,6 +267,7 @@ section.features div.wrap div.feature ul li {
     letter-spacing: 2px;
     text-align: center;
     color: #cccccc;
+    transition: all 0.3s;
 }
 
 body.bright section.features div.wrap div.feature ul li {
