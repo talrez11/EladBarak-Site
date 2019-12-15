@@ -8,7 +8,7 @@
 ?>
 	</div><!-- .site-content -->
 	<footer id="bottom">
-        Designed by <a href="STUDIO@ELADBARAK.COM" target="_blank">studio elad barak</a> Developed by <a href="talreznic11@gmail.com" target="_blank">tal reznic</a>
+        Designed by <a href="mailto:STUDIO@ELADBARAK.COM" target="_blank">studio elad barak</a> Developed by <a href="mailto:talreznic11@gmail.com" target="_blank">tal reznic</a>
 	</footer><!-- .site-footer -->
 </div><!-- .site -->
 

@@ -680,11 +680,11 @@ footer a:first-of-type {
     }
 
     section#contact address {
-        margin-top: 3em;
+        margin-top: 2em;
     }
 
     #sign label textarea {
-        height: 130px;
+        height: 90px;
     }
 
     #sign label textarea, #sign label input {
@@ -693,5 +693,9 @@ footer a:first-of-type {
 
     ::placeholder {
         font-size: 16px;
+    }
+
+    footer {
+        font-size: 10px;
     }
 }
