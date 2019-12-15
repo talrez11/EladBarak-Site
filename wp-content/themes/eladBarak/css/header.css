@@ -4,7 +4,7 @@
 @media only screen and (max-width: 1920px) {
 
     header {
-        padding: 3.65em calc((100% - 1200px) / 2);
+        padding: 2.6em calc((100% - 1200px) / 2);
         background: transparent;
         position: relative;
         z-index: 100000;
@@ -33,17 +33,17 @@
         font-weight: bold;
         font-stretch: normal;
         font-style: normal;
-        line-height: 53px;
+        line-height: 48px;
         letter-spacing: 2px;
         text-align: center;
         color: rgb(255, 255, 255);
-        background-color: rgb(0, 168, 255);
+        background-color: #0083ff;
         width: 220px;
-        height: 53px;
+        height: 48px;
     }
 
     body.bright #menu-main-menu li a {
-        background-color: #005dff;
+        background-color: #0083ff;
     }
 
     #menu-main-menu li.logo a {
@@ -67,7 +67,7 @@
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;
-        width: 100px;
+        width: 82px;
     }
 
     div.switcher label {
@@ -82,34 +82,34 @@
         display: block;
         width: 32px;
         height: 33px;
-        font-size: 32px;
+        font-size: 26px;
         font-weight: normal;
         font-stretch: normal;
         font-style: normal;
         line-height: 1.03;
         letter-spacing: 3.2px;
-        text-align: left;
+        text-align: center;
         border-radius: 50%;
     }
 
     .fas.fa-sun {
-        color: #707080;
+        color: #707070;
     }
 
     div.switcher label.moon {
         display: block;
         width: 32px;
         height: 33px;
-        font-size: 32px;
+        font-size: 22px;
         font-weight: normal;
         font-stretch: normal;
         font-style: normal;
         line-height: 1.03;
         letter-spacing: 3.2px;
-        text-align: left;
+        text-align: center;
         border-radius: 50%;
         position: relative;
-        top: -2px;
+        top: 1px;
     }
 
     .fas.fa-moon {
@@ -149,10 +149,11 @@
 
     div.switcher label.moon {
         position: relative;
-        top: -2px;
+        top: 0px;
     }
 
     .fas.fa-sun {
+        top: 0;
         font-size: 0.6em;
     }
 

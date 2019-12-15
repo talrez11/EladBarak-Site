@@ -40,12 +40,12 @@ jQuery(window).ready(function() {
 	jQuery('#menu-main-menu li.contact a').on('click', function(event) {
 		event.preventDefault();
 		var id = jQuery(this).attr('href');
-		jQuery("html, body").animate({ scrollTop: jQuery(id).offset().top}, 1500);
+		jQuery("html, body").animate({ scrollTop: jQuery(id).offset().top}, 500);
 	});
 
 	jQuery('a#action').on('click', function() {
 		var id = jQuery(this).attr('href');
-		jQuery("html, body").animate({ scrollTop: jQuery(id).offset().top}, 1500);
+		jQuery("html, body").animate({ scrollTop: jQuery(id).offset().top}, 500);
 	});
 
 	// Theme switcher
