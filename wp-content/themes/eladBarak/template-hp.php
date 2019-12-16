@@ -30,6 +30,7 @@ add_action( 'wp_enqueue_scripts', 'home_page_scripts' );
         <?php endwhile; ?>
     <?php endif; ?>
 </section>
+
 <div class="action">
     <a href="#contact" id="action">GET IN TOUCH</a>
 </div>

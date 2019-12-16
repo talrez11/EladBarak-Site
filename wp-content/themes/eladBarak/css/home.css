@@ -580,13 +580,13 @@ footer a:first-of-type {
     }
 
     #slider {
-        margin-top: -85px;
-        height: calc(100% * (586 / 375));
+        margin-top: -145px;
+        height: calc((100vw - (-45px)) * (586 / 375));
     }
 
     #slider .slide h1 {
         font-size: 24px;
-        top: 20%;
+        top: 25%;
     }
 
     .slick-dots {
