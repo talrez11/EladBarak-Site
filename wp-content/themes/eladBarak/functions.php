@@ -34,8 +34,9 @@
 		$email = $_POST['email'];
 		$content_type = 'Content-Type: text/html; charset=UTF-8';
 		$headers = array();
-		$headers[] = "From: $from <$from> \r\n";
-		$headers[] = "CC: $cc";
+        $headers[] = "From: $from <$from> \r\n";
+        $headers[] = "CC: $cc";
+        $headers[]   = "Reply-To: <$email>";
 		$headers[] = $content_type;
         $email_message = "<br />
         Name: $fname.' '.$lastname<br />
