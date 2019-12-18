@@ -11,7 +11,15 @@
 <html <?php language_attributes(); ?> class="no-js">
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134481042-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154746563-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-154746563-1');
+    </script>
+
     <title><?php wp_title(); ?></title>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
