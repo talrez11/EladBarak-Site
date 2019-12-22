@@ -54,7 +54,14 @@ jQuery(window).ready(function() {
 		switchNames.push(jQuery(this).val());
 	});
 
-	jQuery('body').addClass('dark');
+	var time = new Date();
+	var hour = time.getHours();
+	console.log(hour);
+	if(hour > 8 && hour < 18) {
+		jQuery('body').addClass('bright');
+	} else {
+		jQuery('body').addClass('dark');
+	}
 
 	switchElements = jQuery('input[type="radio"]');
 	switchElements.on('click', function() {
