@@ -56,7 +56,6 @@ jQuery(window).ready(function() {
 
 	var time = new Date();
 	var hour = time.getHours();
-	console.log(hour);
 	if(hour > 8 && hour < 18) {
 		jQuery('body').addClass('bright');
 	} else {
